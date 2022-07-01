@@ -1,0 +1,7 @@
+name: poc-yaml-bluecms-sqli
+rules:
+  - method: GET
+    path: /ad_js.php?ad_id=
+    follow_redirects: true
+    expression: |
+      response.status==200 && response.body.bcontains(b'Error!')
