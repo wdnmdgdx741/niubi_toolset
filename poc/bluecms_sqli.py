@@ -6,6 +6,7 @@ ip = sys.argv[1]
 port = sys.argv[2]
 ex = sys.argv[3]
 
+ml = 0
 if ex == "user":
     ml = "user()"
 elif ex == "db":
